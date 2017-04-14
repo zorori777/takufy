@@ -16,6 +16,9 @@
 # Ignore Byebug command history file.
 .byebug_history
 
-# ignore test_file
+# Ignore test_file
 /test/
+
+# Ignore helpers file
+/helpers/
 
