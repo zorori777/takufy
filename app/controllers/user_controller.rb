@@ -24,7 +24,7 @@ private
 
   # Setting strong parameter
   def user_params
-    params.require(:user).permit(:family_name, :first_name, :family_name_kana, :first_name_kana)
+    params.require(:user).permit(:family_name, :first_name, :family_name_kana, :first_name_kana, :image)
   end
 
   # Helper method for common instances

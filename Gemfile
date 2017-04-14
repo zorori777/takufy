@@ -45,7 +45,7 @@ gem 'therubyracer'
 gem 'devise'
 
 # Introduct image function
-gem 'paperclip'
+gem 'carrierwave'
 
 # Introduct page function
 gem 'kaminari'
