@@ -47,6 +47,8 @@ gem 'devise'
 # Introduct image function
 gem 'carrierwave'
 
+# Change save place for image
+gem 'fog'
 # Introduct page function
 gem 'kaminari'
 

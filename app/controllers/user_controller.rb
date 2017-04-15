@@ -12,6 +12,7 @@ before_action :setting_user
 
   # Update user information
   def update
+    binding.pry
     if @user.update(user_params)
       redirect_to user_path(@user), notice: "編集成功しました"
     else
