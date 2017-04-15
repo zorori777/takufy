@@ -11,6 +11,22 @@ class User < ApplicationRecord
 # Association with group
   belongs_to :group
 
+# Introducton S3
+  mount_uploader :image, ImageUploader
+
+# Refuctoring
+  def name
+    "#{family_name} #{first_name}"
+  end
+
+  def name_kana
+    "#{family_name_kana} #{first_name_kana}"
+  end
+
+  def full_profile?
+    avatar? && family_name? && first_name? && family_name_kana? && first_name_kana?
+  end
+
  #validation
   before_validation :group_key_to_id, if: :has_group_key?
 
