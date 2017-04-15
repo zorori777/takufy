@@ -24,7 +24,7 @@ class User < ApplicationRecord
   end
 
   def full_profile?
-    avatar? && family_name? && first_name? && family_name_kana? && first_name_kana?
+    image? && family_name? && first_name? && family_name_kana? && first_name_kana?
   end
 
  #validation
