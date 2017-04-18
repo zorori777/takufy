@@ -6,4 +6,7 @@ class Answer < ApplicationRecord
   # Association with question
     belongs_to :question
 
+  # Validation
+  validates :text, presence: true
+
 end
