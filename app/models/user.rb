@@ -11,6 +11,9 @@ class User < ApplicationRecord
 # Association with group
   belongs_to :group
 
+# Association wuth qusetions
+ has_many :questions, ->{ order("created_at DESC")}
+
 # Introducton S3
   mount_uploader :image, ImageUploader
 
