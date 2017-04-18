@@ -5,7 +5,7 @@ class Question < ApplicationRecord
   belongs_to :group
 
   # Association with answers
-  has_many :answers
+  has_many :answers, ->{ order ("created_at DESC") }
 
   # Varidates
   validates :group_id, :user_id, presence: true
