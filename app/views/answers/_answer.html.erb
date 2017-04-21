@@ -1,0 +1,9 @@
+<section class="col-md-12">
+  <div class="sct_inner">
+    <p><%= link_to answer.user.name, user_path(answer.user) %>さんの回答</p>
+    <h4>→<%= answer.text %></h4>
+    <h3>回答の作成が完了しました。</h3>
+      <%= link_to "他の人の回答を見る", question_path(answer.question) %>
+      <%= link_to "ホームに戻る", root_path %>
+  </div>
+</section>
