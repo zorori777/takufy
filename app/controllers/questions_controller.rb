@@ -10,6 +10,11 @@ class QuestionsController < ApplicationController
      end
   end
 
+  def show
+    @question = Question.find(params[:id])
+    @answers = @question.answers
+  end
+
 private
 
 #Setting strong parameter
