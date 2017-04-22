@@ -10,7 +10,7 @@
     <% if @questions.present? %>
       <h3>このユーザーの回答した質問</h3>
       <div class="clearfix">
-        <%= render @questions %>
+          <%= render partial: 'user/question', collection: @questions %>
       </div>
     <% end %>
   </div>
