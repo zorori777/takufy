@@ -10,4 +10,9 @@ class Question < ApplicationRecord
   # Varidates
   validates :group_id, :user_id, presence: true
 
+  # Helper method
+  def user_answer(user_id)
+    Answer.find_by(user_id: user_id, question_id: id)
+  end
+
 end

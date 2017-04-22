@@ -4,6 +4,8 @@ before_action :setting_user
 
   #Makimg user instance
   def show
+    @user = User.find(params[:id])
+    @questions = @user.answered_questions.uniq
   end
 
   # Edit page

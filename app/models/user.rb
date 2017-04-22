@@ -17,6 +17,9 @@ class User < ApplicationRecord
  # Association with answer
  has_many :answers, ->{ order ("created_at DESC") }
 
+ #Associatin with answerd_question
+ has_many :answered_questions , through: :answers, source: :question
+
 # Introducton S3
   mount_uploader :image, ImageUploader
 
