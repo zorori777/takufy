@@ -1,5 +1,6 @@
 class ApplicationController < ActionController::Base
 
+  # takufy authentication
   #Confirm my account
   before_action :authenticate_user!
 
